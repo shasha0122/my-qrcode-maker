@@ -91,7 +91,7 @@ export function AuthForm({
         });
 
         if (error) {
-          setFormError(mapAuthError(error.message));
+          setFormError(mapAuthError(error.message, error.code));
           return;
         }
 
@@ -120,7 +120,7 @@ export function AuthForm({
       });
 
       if (error) {
-        setFormError(mapAuthError(error.message));
+        setFormError(mapAuthError(error.message, error.code));
         return;
       }
 

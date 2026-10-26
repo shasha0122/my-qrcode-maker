@@ -23,7 +23,8 @@ npm run dev
 | Name | 설명 |
 | --- | --- |
 | `NEXT_PUBLIC_SUPABASE_URL` | Supabase Project URL (`https://<project-ref>.supabase.co`) |
-| `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` | Supabase Publishable key (`sb_publishable_...`) |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Legacy anon key (`eyJ...` JWT). 로그인/회원가입에 필요합니다. |
+| `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` | Publishable key (`sb_publishable_...`). anon 키가 없을 때 사용합니다. |
 
 값은 [Supabase Dashboard → Project Settings → API](https://supabase.com/dashboard)에서 복사합니다. 저장소에는 넣지 마세요.
 
